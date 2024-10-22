@@ -7,39 +7,45 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Please enter your topic here"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-        <div>
+    <section class="container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Please enter the topic of the poem here"
+            autofocus
+            required
+            autocomplete="off"
+            class="topic-input"
+          />
+          <input type="submit" value="Generate A Poem" class="submit-input" />
+        </form>
+        <div class="poem">
           What is this life, if full of care <br />we have no time, to stand and
           stare
         </div>
-      </form>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Lydia-ma-sketch" target="_blank">Lydia</a>,
-      open-sourced on
-      <a
-        href="https://github.com/Lydia-ma-sketch/ai-poem-generator"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://ai-poem-generator-by-lydia.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Lydia-ma-sketch" target="_blank">Lydia</a>,
+        open-sourced on
+        <a
+          href="https://github.com/Lydia-ma-sketch/ai-poem-generator"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a
+          href="https://ai-poem-generator-by-lydia.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </section>
+
     <script src="src/index.js"></script>
   </body>
 </html>
