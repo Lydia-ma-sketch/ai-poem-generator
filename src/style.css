@@ -14,7 +14,7 @@ header {
   color: #272044;
 }
 
-form {
+.form-container {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
@@ -37,6 +37,11 @@ input {
   background-color: #5c5470;
   border: none;
 }
+.hint {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 5px;
+}
 .poem {
   background-color: white;
   font-size: 16px;
@@ -52,9 +57,23 @@ input {
 footer {
   text-align: center;
   font-size: 14px;
-  opacity: 0.9;
+  opacity: 0.7;
   margin-top: 30px;
 }
 a {
   color: #5c5470;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
